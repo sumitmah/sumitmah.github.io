@@ -1,6 +1,96 @@
 <html>
 	<head>
-	<title> Hello, World!!! </title>
+	<title> In the world of open source! </title>
 	</head>
-	<body> Page title says it all! </body>
+	<body> Here is my first post on linux commands for newbies, soon I'll be posting on other useful linux utilities, their usages etc.
+	
+1) cowsay -f dragon "Fire cannot kill a dragon."
+ ___________________________
+< Fire cannot kill a dragon.>
+ ---------------------------
+      \                    / \  //\
+       \    |\___/|      /   \//  \\
+            /0  0  \__  /    //  | \ \
+           /     /  \/_/    //   |  \  \
+           @_^_@'/   \/_   //    |   \   \
+           //_^_/     \/_ //     |    \    \
+        ( //) |        \///      |     \     \
+      ( / /) _|_ /   )  //       |      \     _\
+    ( // /) '/,_ _ _/  ( ; -.    |    _ _\.-~        .-~~~^-.
+  (( / / )) ,-{        _      `-.|.-~-.           .~         `.
+ (( // / ))  '/\      /                 ~-. _ .-~      .-~^-.  \
+ (( /// ))      `.   {            }                   /      \  \
+  (( / ))     .----~-.\        \-'                 .~         \  `. \^-.
+             ///.----..>        \             _ -~             `.  ^-`  ^-_
+               ///-._ _ _ _ _ _ _}^ - - - - ~                     ~-- ,.-~
+                                                                  /.-~
+
+2) ps -eo "%p %c %t"|grep "sshd"
+
+In response to the above command, you will get the following output:
+
+2850 sshd 172-01:37:22
+29532 sshd 125-09:07:10
+
+In the above command %p is pid, %c is command and %t is elapsed time.
+
+
+3) vim -c ":s/>/>>/g" -c ":wq" FILE.TXT
+
+Normally, we use VIM as an editor; however, it can be used as a command. It allows the execution of VIM commands with switch '-c', for example. Here is a command to replace all '>' characters to '>>' in a file FILE.TXT without opening VIM.
+
+
+4) echo "Use TR to Lowercase a String" |  tr "[A-Z]" "[a-z]" 
+
+
+5) uname -m
+
+The result for a 64-bit OS installation (for x86_64 architecture):
+
+x86_64
+
+The result for a non-64-bit OS installation (for i686 architecture):
+
+i686
+
+To know about the processor, run the following command:
+
+
+6) lshw -class processor | grep width
+
+Shown below is the result for a 64-bit installation:
+
+width: 64 bits
+
+The result for a 32-bit installation:
+
+width: 32 bits
+
+7) lsb_release -a
+
+No LSB modules are available.
+Distributor ID:	Ubuntu
+Description:	Ubuntu 12.04.1 LTS
+Release:	12.04
+Codename:	precise
+
+8) cowsay -f tux "Time for me to go to bed. Bye for now, see you next time"
+
+ ________________________________________
+/ Time for me to go to bed. Bye for now, \
+\ see you next time.                     /
+ ----------------------------------------
+   \
+    \
+        .--.
+       |o_o |
+       |:_/ |
+      //   \ \
+     (|     | )
+    /'\_   _/`\
+    \___)=(___/
+  
+Thanks,
+Sumit Mahamuni.
+	</body>
 </html>
