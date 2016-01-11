@@ -5,17 +5,17 @@ In any programming language understanding scopes is very important. Scope define
 ```ruby
 class Foo
     def public_method
-        puts “I’m Public”
+        puts "I'm Public"
     end
     
     protected 
     def protected_method
-	    puts “I’m protected”
+	    puts "I'm protected"
     end
 
     private
     def private_method
-	    puts “I’m private”
+	    puts "I'm private"
     end
 end
 
@@ -38,11 +38,11 @@ Let’s take a look at the above code, looks simple enough to understand right. 
 class Foo
     private
     def private_method
-	puts “I’m private”
+	puts "I'm private"
     end
 
     def self.private_method
-	puts “I’m private”
+	puts "I'm private"
     end
 end
 
