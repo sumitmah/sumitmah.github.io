@@ -174,7 +174,7 @@ end
 
 Ruby calls `vm_define_method` with `is_singleton = true`, which means add method on signleton class of a class(often called eigenclass or virtual class). Now in that case visibility of the method is set to `METHOD_VISI_PUBLIC`. 
 
-Now I hope you understand it better how ruby defines visibility for methods. Let's understand if you want to define visibility for Eighneclass methods. 
+Now I hope you understand it better how ruby defines visibility for methods. Let's understand if you want to define visibility for eigenclass methods. 
 
 ```ruby
 class AnyClass
@@ -193,6 +193,6 @@ class AnyClass
 end
 ```
 
-In above example of code, ruby will set scope in context of Eignenclass which will be used to set visibility on methods defined for Eignenclass.
+In above example of code, ruby will set scope in context of Eignenclass which will be used to set visibility on methods defined for eigenclass.
 
 
