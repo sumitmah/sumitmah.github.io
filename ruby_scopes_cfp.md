@@ -1,6 +1,6 @@
 # Closer look at the ruby scopes. 
 	
-In any programming language understanding scopes is very important. Scope defines visibility for variables, methods, classes, objects, constants. I’m going to discuss how ruby defines scopes for methods. Mos of the OO programming languages have three scopes for methods `public, private and protected`. Ruby also has `public, private and protected` scopes. I’m not going into the details of each scope. I’ll be discussing about how scope is defined for a method in ruby. 
+In any programming language understanding scopes is very important. Scope defines visibility for variables, methods, classes, objects, constants. I’m going to discuss how ruby defines scopes for methods. Most of the OO programming languages have three scopes for methods `public, private and protected`. Ruby also has `public, private and protected` scopes. I’m not going into the details of each scope. I’ll be discussing about how scope is defined for a method in ruby. 
 	
 ```ruby
 class Foo
@@ -152,7 +152,7 @@ static void
 vm_define_method(rb_thread_t *th, VALUE obj, ID id, VALUE iseqval, int is_singleton);
 ```
 
-`vm_define_method` accepts a flag called `is_singleton` which decides whether to add method on signleton class of a class(often called Eighenclass or virtual class) or add instance level methods. 
+`vm_define_method` accepts a flag called `is_singleton` which decides whether to add method on signleton class of a class(often called eigenclass or virtual class) or add instance level methods. 
 
 When you define method in following way. 
 ```ruby
@@ -172,7 +172,7 @@ class AnotherClass
 end
 ```
 
-Ruby calls `vm_define_method` with `is_singleton = true`, which means add method on signleton class of a class(often called Eighenclass or virtual class). Now in that case visibility of the method is set to `METHOD_VISI_PUBLIC`. 
+Ruby calls `vm_define_method` with `is_singleton = true`, which means add method on signleton class of a class(often called eigenclass or virtual class). Now in that case visibility of the method is set to `METHOD_VISI_PUBLIC`. 
 
 Now I hope you understand it better how ruby defines visibility for methods. Let's understand if you want to define visibility for Eighneclass methods. 
 
