@@ -193,6 +193,6 @@ class AnyClass
 end
 ```
 
-In above example of code, ruby will set scope in context of Eignenclass which will be used to set visibility on methods defined for eigenclass.
+In above example of code, ruby will set scope in context of eigenclass which will be used to set visibility on methods defined for eigenclass.
 
 
